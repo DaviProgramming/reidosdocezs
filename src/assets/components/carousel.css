@@ -88,7 +88,7 @@
 .info-item:is(.active) {
 
     transition: 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
-    animation: 0.2s textRotate;
+    animation: 0.4s textRotate;
 
 }
 
@@ -96,13 +96,14 @@
 @keyframes textRotate {
 
     from {
-
-        transform: rotateX(320deg);
+        transform: translateX(-500px);
 
     }
 
     to {
-        transform: rotateX(0deg);
+
+
+        transform: translateX(0px);
     }
 
 }
