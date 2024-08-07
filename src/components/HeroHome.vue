@@ -9,17 +9,16 @@ import { faInstagram, faTiktok } from '@fortawesome/free-brands-svg-icons'
 </script>
 
 <template>
-  <section class="container-hero">
+  <section class="container-hero" id="inicio">
     <div class="container-hero-texts-infos">
       <div class="containe-hero-texts-infos-title">
         <span>Sabor real </span> <span>em</span>
         <span>cada mordida</span>
         <div class="containe-hero-texts-infos-redes">
           <div class="rede-social">
-            <a href="" target="_blank"><font-awesome-icon :icon="faInstagram" /></a>
-          </div>
-          <div class="rede-social">
-            <a href="" target="_blank"><font-awesome-icon :icon="faTiktok" /></a>
+            <router-link to="" target="_blank">
+              <font-awesome-icon :icon="faInstagram" />
+            </router-link>
           </div>
         </div>
       </div>

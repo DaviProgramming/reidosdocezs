@@ -2,7 +2,7 @@
     position: fixed;
     width: 100vw;
     height: 100vh;
-    background: var(--secondary-white-color);
+    background-image: linear-gradient(to right bottom, #140804, #1d0d06, #241108, #2b140a, #33170c, #33170c, #33170c, #33170c, #2b140a, #241108, #1d0d06, #140804);
     z-index: 100;
     display: flex;
     align-items: center;
@@ -33,7 +33,6 @@
 .loader img {
     width: 150px;
     height: 150px;
-    animation: 1.3s logoLoaderAnimation linear infinite;
 
 }
 

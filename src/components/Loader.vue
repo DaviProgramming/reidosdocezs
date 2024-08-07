@@ -5,13 +5,15 @@ import logo from '../assets/images/logo.png'
 const isLoading = ref(true)
 
 onMounted(() => {
-  isLoading.value = false
+  setTimeout(() => {
+    isLoading.value = false
 
-  let body = document.body
+    let body = document.body
 
-  if (body.classList.contains('loader')) {
-    body.classList.remove('loader')
-  }
+    if (body.classList.contains('loader')) {
+      body.classList.remove('loader')
+    }
+  }, 1300)
 })
 </script>
 

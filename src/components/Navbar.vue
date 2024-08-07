@@ -26,9 +26,10 @@ onMounted(() => {
       <span>reidosdocezs</span>
     </div>
     <div class="infos">
-      <a href="/teste" class="info active">Inicio</a>
-      <a href="/teste" class="info">Sobre nós</a>
-      <a href="/teste" class="info">Contato</a>
+      <a href="#inicio" class="info active">Inicio</a>
+      <a href="#produtos" class="info">Produtos</a>
+      <a href="#contato" class="info">Contato</a>
+      <a href="#sobrenos" class="info">Sobre nós</a>
     </div>
   </nav>
 </template>

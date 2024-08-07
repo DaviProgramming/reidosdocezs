@@ -74,7 +74,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <section class="products">
+  <section class="products" id="produtos">
     <h1>Produtos</h1>
     <div class="container-produtos">
       <div class="carousel">
