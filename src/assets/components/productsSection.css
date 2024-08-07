@@ -1,0 +1,59 @@
+@import "./carousel.css";
+
+section.products {
+    min-height: 73vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    background: var(--secondary-white-color);
+    z-index: 10;
+    overflow: hidden;
+}
+
+
+
+.products h1 {
+
+    font-size: 100px;
+    color: var(--white-color);
+
+}
+
+
+.container-produtos {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+
+.container-produtos .produto {
+    border-radius: 12px;
+}
+
+.container-produtos img {
+    width: 600px;
+}
+
+.custom-shape-divider-bottom-1722781356 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    z-index: 1;
+}
+
+.custom-shape-divider-bottom-1722781356 svg {
+    position: relative;
+    display: block;
+    width: calc(124% + 1.3px);
+    height: 73px;
+}
+
+.custom-shape-divider-bottom-1722781356 .shape-fill {
+    fill: var(--secondary-white-color);
+}

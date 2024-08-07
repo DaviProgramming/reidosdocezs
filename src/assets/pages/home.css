@@ -1,0 +1,218 @@
+@import "../components/productsSection.css";
+@import "../components/showProducts.css";
+
+.container-hero {
+
+    width: 100%;
+    height: 100%;
+    position: relative;
+    height: 103vh;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+}
+
+.container-hero-image {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 101vh;
+    width: 100%;
+
+
+}
+
+
+
+.container-hero-image img {
+    object-fit: cover;
+    aspect-ratio: 16/9;
+    width: 110%;
+    height: 100%;
+    transform: scaleX(-1);
+
+}
+
+
+.container-hero-texts-infos {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+.containe-hero-texts-infos-title {
+    color: #914121;
+    font-weight: 200;
+    align-items: center;
+    justify-content: center;
+    text-align: start;
+    font-family: 'pacifico';
+    font-size: 110px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    white-space: nowrap;
+    margin-left: 140px;
+
+}
+
+.containe-hero-texts-infos-title span {
+
+    line-height: 90px;
+
+
+}
+
+.containe-hero-texts-infos-redes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+    gap: 30px;
+    width: 100%;
+    border-radius: 12px;
+
+}
+
+
+
+.rede-social {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: max-content;
+}
+
+.rede-social a {
+    display: flex;
+    align-items: center;
+    height: max-content !important;
+    background: var(--white-color);
+    padding: 10px;
+    border-radius: 12px;
+}
+
+.rede-social svg {
+    color: #914121;
+    height: 30px;
+}
+
+
+.rede-social:hover {
+
+    scale: 1.1;
+    transition: 0.2s;
+}
+
+.container-hero-products {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-top: 20px;
+}
+
+.product {
+    position: relative;
+}
+
+.product:not(.blur) {
+
+    z-index: 10;
+    animation: rotateCaixa 10s infinite forwards;
+
+}
+
+.product:not(.blur) img:hover {
+
+    scale: 0.9;
+    transition: 0.2s;
+
+}
+
+
+.product:not(.blur) img:not(:hover) {
+
+    scale: 1;
+    transition: 0.2s;
+
+
+}
+
+.container-hero-products .blur {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    top: -80px;
+    left: 0;
+    z-index: 1;
+    filter: blur(390px) saturate(23) hue-rotate(50deg);
+    opacity: 1;
+    animation: blurChanging 10s infinite ease-in-out;
+}
+
+@keyframes blurChanging {
+
+    0% {
+
+        filter: blur(400px) saturate(23) hue-rotate(50deg);
+
+    }
+
+    50% {
+
+        filter: blur(390px) saturate(23) hue-rotate(50deg);
+
+    }
+
+    100% {
+
+        filter: blur(400px) saturate(23) hue-rotate(50deg);
+
+
+    }
+}
+
+@keyframes rotateCaixa {
+
+    0% {
+
+        transform: rotate(0deg);
+
+    }
+
+
+    25% {
+
+        transform: rotate(3deg);
+
+    }
+
+    50% {
+
+        transform: rotate(8deg);
+
+    }
+
+
+    75% {
+
+        transform: rotate(0deg);
+
+    }
+
+    100% {
+
+
+        transform: rotate(0deg);
+
+    }
+
+}

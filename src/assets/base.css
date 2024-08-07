@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+
+  --white-color: #EEF7FF;
+  --letter-color: #45474B;
+  --black-color: #121212;
+  --secondary-white-color: #4F200D;
+
+  --font-family-1: "Raleway", sans-serif;
+
+}
+
+
+@font-face {
+  font-family: 'Bernadette';
+  src: url('./fontes/bernadette.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Madina';
+  src: url('./fontes/Madina.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'signatra';
+  src: url('./fontes/Signatra.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'cookie';
+  src: url('./fontes/Cookie.ttf') format('truetype');
+}
+
+@font-face {
+
+  font-family: 'pacifico';
+  src: url('./fontes/Pacifico.ttf');
+
+}

@@ -1,0 +1,116 @@
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 60px;
+    box-sizing: border-box;
+    color: var(--secondary-white-color);
+    z-index: 20;
+}
+
+
+nav.active {
+    background: var(--white-color);
+
+}
+
+
+
+nav img {
+    height: 50px;
+}
+
+nav .infos {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    color: var(--white-color);
+    z-index: 1;
+
+}
+
+nav a {
+    position: relative;
+    z-index: 11;
+    text-decoration: none;
+}
+
+nav .info {
+
+
+    position: relative;
+    color: var(--secondary-white-color);
+    z-index: 10;
+    pointer-events: auto;
+    width: max-content;
+}
+
+nav .info.active {
+
+    font-weight: 700;
+
+}
+
+
+nav .info:hover::after {
+
+    content: '';
+    position: absolute;
+
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: var(--secondary-white-color);
+
+    animation: widthAnimation 0.2s;
+
+}
+
+nav .info.active::before {
+
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: var(--secondary-white-color);
+    border-radius: 12px;
+}
+
+nav .logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+
+}
+
+nav .logo span {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
+@keyframes widthAnimation {
+    from {
+
+        width: 0%;
+
+    }
+
+    to {
+
+        width: 100%;
+
+    }
+}
