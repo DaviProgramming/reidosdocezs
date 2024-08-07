@@ -15,8 +15,11 @@ onMounted(() => {
 
   const allImages = document.querySelectorAll('.img-item')
 
+  const infoItemAll = document.querySelectorAll('.info-item')
+
   let indexSlider = 0
   let index = 0
+  let indexInfo = 0
 
   nextButton.addEventListener('click', () => {
     indexSlider++
@@ -27,6 +30,20 @@ onMounted(() => {
     if (index > allImages.length - 1) {
       index = 0
     }
+
+    indexInfo++
+
+    if (indexInfo > infoItemAll.length - 1) {
+      indexInfo = 0
+    }
+
+    let activeInfoItem = document.querySelector('.info-item.active')
+
+    if (activeInfoItem != null) {
+      activeInfoItem.classList.remove('active')
+    }
+
+    infoItemAll[indexInfo].classList.add('active')
   })
 
   prevButton.addEventListener('click', () => {
@@ -38,6 +55,22 @@ onMounted(() => {
     if (index < 0) {
       index = 0
     }
+
+    indexInfo--
+
+    if (indexInfo < 0) {
+      indexInfo = infoItemAll.length - 1
+    }
+
+    console.log(infoItemAll[indexInfo])
+
+    let activeInfoItem = document.querySelector('.info-item.active')
+
+    if (activeInfoItem != null) {
+      activeInfoItem.classList.remove('active')
+    }
+
+    infoItemAll[indexInfo].classList.add('active')
   })
 })
 </script>
@@ -68,7 +101,7 @@ onMounted(() => {
 
         <div class="info-box">
           <div class="info-slider">
-            <div class="info-item">
+            <div class="info-item active">
               <h2>Bolo de chocolate com ninho</h2>
               <p>
                 Descubra o prazer de nosso bolo de chocolate, com uma massa rica e fofinha. Coberto
@@ -77,7 +110,23 @@ onMounted(() => {
               </p>
             </div>
             <div class="info-item">
-              <h2>Bolo de chocolate com ninho</h2>
+              <h2>Bolo de chocolate com ninho 2</h2>
+              <p>
+                Descubra o prazer de nosso bolo de chocolate, com uma massa rica e fofinha. Coberto
+                com um cremoso creme de ninho e decorado com morangos frescos, oferece uma
+                combinação perfeita de sabores e texturas.
+              </p>
+            </div>
+            <div class="info-item">
+              <h2>Bolo de chocolate com ninho 3</h2>
+              <p>
+                Descubra o prazer de nosso bolo de chocolate, com uma massa rica e fofinha. Coberto
+                com um cremoso creme de ninho e decorado com morangos frescos, oferece uma
+                combinação perfeita de sabores e texturas.
+              </p>
+            </div>
+            <div class="info-item">
+              <h2>Bolo de chocolate com ninho 4</h2>
               <p>
                 Descubra o prazer de nosso bolo de chocolate, com uma massa rica e fofinha. Coberto
                 com um cremoso creme de ninho e decorado com morangos frescos, oferece uma
