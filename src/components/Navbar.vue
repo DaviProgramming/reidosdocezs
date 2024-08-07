@@ -6,8 +6,6 @@ onMounted(() => {
   const navbar = document.querySelector('nav')
 
   window.addEventListener('scroll', () => {
-    console.log(window.scrollY)
-
     if (window.scrollY >= 100) {
       if (!navbar.classList.contains('active')) {
         navbar.classList.add('active')

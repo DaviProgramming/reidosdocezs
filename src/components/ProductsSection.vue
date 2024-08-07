@@ -62,8 +62,6 @@ onMounted(() => {
       indexInfo = infoItemAll.length - 1
     }
 
-    console.log(infoItemAll[indexInfo])
-
     let activeInfoItem = document.querySelector('.info-item.active')
 
     if (activeInfoItem != null) {

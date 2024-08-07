@@ -4,6 +4,8 @@
 
 @import './pages/home.css';
 
+@import "./components/loader.css";
+
 body {
 
     background-image: linear-gradient(to right top, #eef7ff, #e8eef5, #e2e6ec, #dbdde2, #d4d5d8, #d4d5d8, #d4d5d8, #d4d5d8, #dbdde2, #e2e6ec, #e8eef5, #eef7ff);
@@ -14,6 +16,27 @@ body {
     width: 100%;
     min-height: 100vh;
     overflow-x: hidden;
+}
+
+
+body.loader {
+
+    overflow: hidden !important;
+
+}
+
+
+body::-webkit-scrollbar-thumb {
+
+
+    background: var(--letter-color);
+
+}
+
+body::-webkit-scrollbar {
+
+    width: 10px;
+
 }
 
 * {

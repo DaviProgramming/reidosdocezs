@@ -18,7 +18,7 @@ nav {
 
 nav.active {
     background: var(--white-color);
-    transition: 0.2s;
+    transition: 0.4s;
 }
 
 nav:not(.active) {
