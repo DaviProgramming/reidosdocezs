@@ -123,19 +123,19 @@ onMounted(() => {
               </p>
             </div>
             <div class="info-item">
-              <h2>Bolo de chocolate com ninho 2</h2>
+              <h2>Bolo de pote de chocolate com chantilly</h2>
               <p>
-                Descubra o prazer de nosso bolo de chocolate, com uma massa rica e fofinha. Coberto
-                com um cremoso creme de ninho e decorado com morangos frescos, oferece uma
-                combinação perfeita de sabores e texturas.
+                Delicie-se com nosso bolo de pote de chocolate: massa rica e macia, combinada com
+                chantilly cremoso. Cada camada é uma explosão de sabor, finalizada com raspas de
+                chocolate. A sobremesa perfeita para um toque doce e especial!
               </p>
             </div>
             <div class="info-item">
-              <h2>Bolo de chocolate com ninho 3</h2>
+              <h2>Caixa de bombom com chocolate e ninho</h2>
               <p>
-                Descubra o prazer de nosso bolo de chocolate, com uma massa rica e fofinha. Coberto
-                com um cremoso creme de ninho e decorado com morangos frescos, oferece uma
-                combinação perfeita de sabores e texturas.
+                nossa caixa de bombons combina o melhor do chocolate com o cremoso sabor de ninho.
+                Uma verdadeira experiência gourmet que vai encantar seu paladar e tornar qualquer
+                momento ainda mais especial.
               </p>
             </div>
             <div class="info-item">
