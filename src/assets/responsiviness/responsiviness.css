@@ -102,6 +102,7 @@
     .contato-container h1,
     .products h1 {
         font-size: 60px;
+        width: 100%;
     }
 
     .info-box {
