@@ -1,0 +1,77 @@
+@media screen and (max-width: 998px) {
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav .infos {
+        display: none !important;
+    }
+
+    nav .hamburguer-icon {
+        display: flex;
+        background: var(--secondary-white-color);
+        padding: 5px;
+        border-radius: 6px;
+        cursor: pointer;
+    }
+
+    nav .hamburguer-icon:hover {
+        scale: 1.1;
+        transition: 0.2s;
+    }
+
+    nav .hamburguer-icon svg {
+        color: var(--white-color);
+    }
+
+    .container-hero {
+        max-width: 100vw;
+        overflow: hidden;
+        padding: 30px;
+        position: relative;
+    }
+
+    .containe-hero-texts-infos-title {
+
+        margin-left: 0px;
+        max-width: 100vw;
+
+    }
+
+    .containe-hero-texts-infos-title span {
+        font-size: 60px !important;
+        text-shadow: 0 0 50px var(--secondary-white-color);
+        color: white;
+    }
+
+    .container-hero-products {
+        position: absolute;
+        left: 10px;
+        top: 0;
+        z-index: 1;
+    }
+
+    .container-hero-products img {
+        height: 900px;
+    }
+
+    .products {
+        margin-top: -10px;
+    }
+
+    .products h1 {
+        font-size: 60px;
+    }
+
+    .contato-container h1 {
+        font-size: 60px;
+    }
+
+    .option.whatsapp span {
+        font-size: 25px;
+        text-align: center;
+    }
+}

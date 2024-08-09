@@ -1,7 +1,8 @@
 <script setup lang="js">
 import { onMounted } from 'vue'
 import logo from '../assets/images/logo.png'
-
+import { faBars } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 onMounted(() => {
   const navbar = document.querySelector('nav')
 
@@ -49,6 +50,10 @@ onMounted(() => {
       <a href="#inicio" class="info active">Inicio</a>
       <a href="#produtos" class="info">Produtos</a>
       <a href="#contato" class="info">Contato</a>
+    </div>
+
+    <div class="hamburguer-icon">
+      <font-awesome-icon :icon="faBars" />
     </div>
   </nav>
 </template>

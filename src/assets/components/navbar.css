@@ -15,6 +15,10 @@ nav {
     z-index: 20;
 }
 
+nav .hamburguer-icon {
+    display: none;
+}
+
 
 nav.active {
 
