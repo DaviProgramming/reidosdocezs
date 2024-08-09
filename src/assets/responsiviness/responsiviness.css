@@ -4,6 +4,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        padding: 40px 20px !important;
     }
 
     nav .infos {
@@ -49,8 +50,16 @@
 
     .container-hero-products {
         position: absolute;
-        left: 10px;
+        left: 0px;
         top: 0;
+        z-index: 2;
+    }
+
+    .container-hero-products .product:not(.blur) {
+        z-index: 10;
+    }
+
+    .product.blur {
         z-index: 1;
     }
 
@@ -74,4 +83,39 @@
         font-size: 25px;
         text-align: center;
     }
+
+    .custom-shape-divider-bottom-1722781356 {
+        z-index: 5;
+    }
+
+}
+
+
+@media (max-width:400px) {
+
+    .container-hero-products {
+        position: absolute;
+        left: 10px;
+        top: -25%;
+        z-index: 2;
+    }
+
+    .contato-container h1,
+    .products h1 {
+        font-size: 40px;
+    }
+
+    .info-box {
+        left: 0;
+        right: 0;
+        width: 100vw;
+        padding: 0 20px;
+    }
+
+    footer {
+        background: var(--secondary-white-color);
+        height: max-content;
+        padding-bottom: 20px;
+    }
+
 }
