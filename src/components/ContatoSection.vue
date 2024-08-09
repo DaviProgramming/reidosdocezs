@@ -33,7 +33,6 @@ onMounted(() => {
         ></path>
       </svg>
     </div>
-
     <div class="contato-container">
       <h1 class="title">Entre em contato e saiba mais!</h1>
 

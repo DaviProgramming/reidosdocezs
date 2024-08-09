@@ -2,7 +2,7 @@
 
 <template>
   <footer>
-    <div class="custom-shape-divider-bottom-1722781356">
+    <div class="custom-shape-divider-bottom-1722781356 two">
       <svg
         data-name="Layer 1"
         xmlns="http://www.w3.org/2000/svg"
@@ -14,6 +14,13 @@
           class="shape-fill"
         ></path>
       </svg>
+    </div>
+    <div class="footer-container">
+      <div class="copyright">@todos os direitos reservados Reidosdocez</div>
+      <div class="copyright-dev">
+        Desenvolvido por
+        <a href="https://www.linkedin.com/in/davidoliveiradev/" target="_blank">David Oliveira</a>
+      </div>
     </div>
   </footer>
 </template>

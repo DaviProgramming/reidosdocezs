@@ -16,14 +16,34 @@ onMounted(() => {
       }
     }
   })
+
+  const navbarInfos = document.querySelectorAll('nav .info')
+
+  navbarInfos.forEach((infos) => {
+    infos.addEventListener('click', (click) => {
+      let infoClicked = click.target
+
+      if (!infoClicked.classList.contains('active')) {
+        let infoActived = document.querySelector('.info.active')
+
+        if (infoActived != null) {
+          infoActived.classList.remove('active')
+        }
+
+        infoClicked.classList.add('active')
+      }
+    })
+  })
 })
 </script>
 
 <template>
   <nav>
     <div class="logo">
-      <img :src="logo" alt="" />
-      <span>reidosdocezs</span>
+      <a href="">
+        <img :src="logo" alt="" />
+        <span>reidosdocez</span>
+      </a>
     </div>
     <div class="infos">
       <a href="#inicio" class="info active">Inicio</a>

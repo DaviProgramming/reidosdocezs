@@ -13,6 +13,7 @@
     transform: translateX(-50%);
     width: 1600px;
     height: 1600px;
+
 }
 
 
@@ -27,6 +28,7 @@
     display: flex;
     align-items: center;
     transition: 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+
 }
 
 .img-slider .img-item {
@@ -35,6 +37,7 @@
     left: 0;
     transform: rotate(calc(360deg / 4 * var(--i)));
     transform-origin: 800px;
+
 }
 
 
@@ -45,12 +48,13 @@
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
+
 }
 
 .info-box {
     position: absolute;
     right: 8%;
-    bottom: 10%;
+    bottom: 13%;
     width: 350px;
     height: 150px;
     display: flex;
