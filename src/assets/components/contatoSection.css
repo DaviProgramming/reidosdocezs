@@ -1,0 +1,92 @@
+.custom-shape-divider-top-1722781981 {
+    position: absolute;
+    top: -12px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    z-index: 10;
+}
+
+.custom-shape-divider-top-1722781981 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 140px;
+}
+
+.custom-shape-divider-top-1722781981 .shape-fill {
+    fill: var(--secondary-white-color);
+}
+
+
+.contato {
+
+    min-height: 60vh;
+    position: relative;
+
+}
+
+
+
+.contato-container {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 160px;
+    padding-bottom: 70px;
+}
+
+.contato-container h1 {
+
+    font-size: 100px;
+    width: 60%;
+    text-align: center;
+    align-self: center;
+
+}
+
+.contato-container-options {
+    padding-top: 20px;
+}
+
+.option {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+
+}
+
+.option.whatsapp img {
+
+    height: 300px;
+
+}
+
+
+.option.whatsapp img:hover {
+
+    cursor: pointer;
+    scale: 1.05;
+    transition: 0.2s;
+}
+
+
+.option.whatsapp span {
+    font-size: 32px;
+}
+
+.option.whatsapp span,
+.title {
+
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}

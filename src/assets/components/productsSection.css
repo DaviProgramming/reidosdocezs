@@ -1,7 +1,8 @@
 @import "./carousel.css";
 
 section.products {
-    min-height: 73vh;
+    height: 73vh;
+    min-height: 660px;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -18,7 +19,10 @@ section.products {
 
     font-size: 100px;
     color: var(--white-color);
-
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
 
 

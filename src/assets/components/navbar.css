@@ -17,8 +17,18 @@ nav {
 
 
 nav.active {
-    background: var(--white-color);
+
+
+    background: #ffffffdc;
     transition: 0.4s;
+}
+
+
+nav.active:hover {
+
+
+    background: var(--white-color);
+
 }
 
 nav:not(.active) {
@@ -34,6 +44,13 @@ nav img {
     height: 50px;
 }
 
+nav .logo span {
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
 nav .infos {
     position: relative;
     display: flex;
@@ -41,6 +58,7 @@ nav .infos {
     gap: 20px;
     color: var(--white-color);
     z-index: 1;
+
 
 }
 
@@ -92,6 +110,7 @@ nav .info.active::before {
     height: 3px;
     background: var(--secondary-white-color);
     border-radius: 12px;
+    animation: widthAnimation 0.2s;
 }
 
 nav .logo {

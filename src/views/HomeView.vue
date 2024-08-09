@@ -3,7 +3,8 @@ import HeroHome from '@/components/HeroHome.vue'
 import Loader from '@/components/Loader.vue'
 import Navbar from '@/components/Navbar.vue'
 import ProductsSection from '@/components/ProductsSection.vue'
-import showProducts from '@/components/showProducts.vue'
+import ContatoSection from '@/components/ContatoSection.vue'
+import FooterComponent from '@/components/Footer.vue'
 </script>
 
 <template>
@@ -11,5 +12,6 @@ import showProducts from '@/components/showProducts.vue'
   <Navbar />
   <HeroHome />
   <ProductsSection />
-  <showProducts />
+  <ContatoSection />
+  <FooterComponent />
 </template>

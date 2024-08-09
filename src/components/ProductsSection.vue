@@ -70,6 +70,21 @@ onMounted(() => {
 
     infoItemAll[indexInfo].classList.add('active')
   })
+
+  let produtosDiv = document.querySelector('#produtos')
+
+  produtosDiv.addEventListener('mouseover', (e) => {
+    let navbarOptionActive = document.querySelector('nav a.active')
+    let navbarOptionToActive = document.querySelector('nav a[href="#produtos"]')
+
+    if (navbarOptionActive != null) {
+      navbarOptionActive.classList.remove('active')
+    }
+
+    if (!navbarOptionToActive.classList.contains('active')) {
+      navbarOptionToActive.classList.add('active')
+    }
+  })
 })
 </script>
 

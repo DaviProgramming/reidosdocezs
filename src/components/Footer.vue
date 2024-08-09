@@ -1,7 +1,8 @@
-<script setup></script>
+<script setup lang="js"></script>
+
 <template>
-  <section class="show-products">
-    <div class="custom-shape-divider-top-1722781981">
+  <footer>
+    <div class="custom-shape-divider-bottom-1722781356">
       <svg
         data-name="Layer 1"
         xmlns="http://www.w3.org/2000/svg"
@@ -14,7 +15,5 @@
         ></path>
       </svg>
     </div>
-
-    <div class="show-products-items"></div>
-  </section>
+  </footer>
 </template>

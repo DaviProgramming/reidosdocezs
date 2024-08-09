@@ -29,7 +29,6 @@ onMounted(() => {
       <a href="#inicio" class="info active">Inicio</a>
       <a href="#produtos" class="info">Produtos</a>
       <a href="#contato" class="info">Contato</a>
-      <a href="#sobrenos" class="info">Sobre nós</a>
     </div>
   </nav>
 </template>

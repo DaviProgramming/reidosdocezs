@@ -6,6 +6,24 @@ import product2 from '../assets/images/caixa-de-doces.png'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { byPrefixAndName } from '@awesome.me/kit-KIT_CODE/icons'
 import { faInstagram, faTiktok } from '@fortawesome/free-brands-svg-icons'
+import { onMounted } from 'vue'
+
+onMounted(() => {
+  let inicioDiv = document.querySelector('#inicio')
+
+  inicioDiv.addEventListener('mouseover', (e) => {
+    let navbarOptionActive = document.querySelector('nav a.active')
+    let navbarOptionToActive = document.querySelector('nav a[href="#inicio"]')
+
+    if (navbarOptionActive != null) {
+      navbarOptionActive.classList.remove('active')
+    }
+
+    if (!navbarOptionToActive.classList.contains('active')) {
+      navbarOptionToActive.classList.add('active')
+    }
+  })
+})
 </script>
 
 <template>
@@ -16,9 +34,9 @@ import { faInstagram, faTiktok } from '@fortawesome/free-brands-svg-icons'
         <span>cada mordida</span>
         <div class="containe-hero-texts-infos-redes">
           <div class="rede-social">
-            <router-link to="" target="_blank">
+            <a href="https://www.instagram.com/reidosdocez/" target="_blank">
               <font-awesome-icon :icon="faInstagram" />
-            </router-link>
+            </a>
           </div>
         </div>
       </div>

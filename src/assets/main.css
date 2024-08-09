@@ -1,10 +1,12 @@
 @import './base.css';
 
 @import "./components/navbar.css";
+@import "./components/loader.css";
+@import "./components/footer.css";
 
 @import './pages/home.css';
 
-@import "./components/loader.css";
+
 
 
 html,
@@ -21,7 +23,7 @@ body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    width: 100%;
+    width: 100vw;
     min-height: 100vh;
     overflow-x: hidden;
 }
