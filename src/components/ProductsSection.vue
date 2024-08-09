@@ -2,6 +2,7 @@
 import bolo from '../assets/images/bolo.png'
 import boloPote from '../assets/images/bolo-de-pote.png'
 import caixaDoce from '../assets/images/caixa-de-doces.png'
+import boloMorango from '../assets/images/bolo2.png'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons'
 
@@ -106,7 +107,7 @@ onMounted(() => {
                 <img :src="caixaDoce" alt="" />
               </div>
               <div class="img-item" style="--i: 3">
-                <img :src="bolo" alt="" />
+                <img :src="boloMorango" alt="" />
               </div>
             </div>
           </div>
@@ -123,7 +124,7 @@ onMounted(() => {
               </p>
             </div>
             <div class="info-item">
-              <h2>Bolo de pote de chocolate com chantilly</h2>
+              <h2>Bolo de pote de chocolate e chantilly</h2>
               <p>
                 Delicie-se com nosso bolo de pote de chocolate: massa rica e macia, combinada com
                 chantilly cremoso. Cada camada é uma explosão de sabor, finalizada com raspas de
@@ -131,7 +132,7 @@ onMounted(() => {
               </p>
             </div>
             <div class="info-item">
-              <h2>Caixa de bombom com chocolate e ninho</h2>
+              <h2>Caixa de bombom de chocolate e ninho</h2>
               <p>
                 nossa caixa de bombons combina o melhor do chocolate com o cremoso sabor de ninho.
                 Uma verdadeira experiência gourmet que vai encantar seu paladar e tornar qualquer
@@ -139,11 +140,12 @@ onMounted(() => {
               </p>
             </div>
             <div class="info-item">
-              <h2>Bolo de chocolate com ninho 4</h2>
+              <h2>Bolo de chocolate de chocolate com morangos</h2>
               <p>
-                Descubra o prazer de nosso bolo de chocolate, com uma massa rica e fofinha. Coberto
-                com um cremoso creme de ninho e decorado com morangos frescos, oferece uma
-                combinação perfeita de sabores e texturas.
+                nosso bolo de chocolate é feito com uma massa fofinha e rica, coberta com um ganache
+                de chocolate irresistível e enfeitado com morangos frescos. É a combinação perfeita
+                de chocolate e frutas que vai deixar qualquer momento ainda mais especial e
+                delicioso
               </p>
             </div>
           </div>
