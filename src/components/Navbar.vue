@@ -51,9 +51,5 @@ onMounted(() => {
       <a href="#produtos" class="info">Produtos</a>
       <a href="#contato" class="info">Contato</a>
     </div>
-
-    <div class="hamburguer-icon">
-      <font-awesome-icon :icon="faBars" />
-    </div>
   </nav>
 </template>

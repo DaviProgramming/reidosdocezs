@@ -3,6 +3,7 @@
 @import "./components/navbar.css";
 @import "./components/loader.css";
 @import "./components/footer.css";
+@import "./components/aside.css";
 
 @import './pages/home.css';
 
